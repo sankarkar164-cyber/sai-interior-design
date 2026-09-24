@@ -8,10 +8,6 @@ Included:
   - project-01-1.png = logo
   - project-02-1.png through project-17-1.png = 16 unique portfolio images
 
-CONTACT:
-WhatsApp: +91 84389 98263
-WhatsApp: +91 99945 08864
-Address: 1/50, Achari Street, Konai Post & Konai Village, Gingee Taluk, Villupuram District, Tamil Nadu - 604205
 
 GOOGLE SHEETS SETUP:
 1. Create/open a Google Sheet.
