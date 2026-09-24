@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sai Interior Design | Beautiful Living Solutions</title>
+<meta name="description" content="Sai Interior Design — modular kitchens, wardrobes, TV units, bedrooms and complete home interiors.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f4;--paper:#fff;--ink:#201d19;--muted:#6e675f;--gold:#b58a52;--line:#e5ddd2;--dark:#211d19}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.wrap{width:min(1240px,calc(100% - 40px));margin:auto}header{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;font-family:"DM Serif Display",serif;font-size:21px}.brand img{width:58px;height:58px;object-fit:contain}.brand span{color:var(--gold)}.links{display:flex;gap:24px;font-size:14px}.links a:hover{color:var(--gold)}.nav-actions{display:flex;gap:10px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:1px solid var(--ink);font-size:13px;font-weight:600;transition:.25s;cursor:pointer}.btn.dark{background:var(--ink);color:#fff}.btn.dark:hover{background:var(--gold);border-color:var(--gold)}.btn.light:hover{background:var(--ink);color:#fff}.burger{display:none;border:0;background:none;font-size:26px;cursor:pointer;padding:8px;line-height:1}
+@media(max-width:1000px){
+  .links.mobile{
+    display:flex;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    flex-direction:column;
+    gap:0;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 12px 25px rgba(31,27,22,.10);
+    padding:8px 20px 14px;
+    z-index:60;
+  }
+  .links.mobile a{
+    display:block;
+    padding:13px 4px;
+    border-bottom:1px solid var(--line);
+    font-size:15px;
+  }
+  .links.mobile a:last-child{border-bottom:0}
+}
+.hero{min-height:calc(100vh - 78px);display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;padding:70px 0}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:var(--gold);font-weight:700;margin-bottom:12px}h1,h2,h3{font-family:"DM Serif Display",serif;font-weight:400;line-height:1.08}h1{font-size:clamp(44px,6vw,76px);margin:0 0 20px}h2{font-size:clamp(34px,4vw,48px);margin:0 0 16px}h3{font-size:24px;margin:0}.hero p{font-size:18px;color:var(--muted);max-width:560px;margin:0 0 30px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{height:min(720px,78vh);min-height:480px;overflow:hidden;position:relative;background:#ddd}.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s}.hero-photo:hover img{transform:scale(1.045)}.hero-label{position:absolute;left:22px;bottom:22px;background:rgba(20,18,15,.78);color:#fff;padding:12px 16px;font-size:12px;letter-spacing:.05em}
+section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:36px}.section-head p{max-width:560px;color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-photo{height:620px;overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover}.ticks{display:grid;gap:13px;margin-top:25px;padding:0}.ticks li{list-style:none;border-bottom:1px solid var(--line);padding:13px 0;color:#4e4943}.ticks li:before{content:"✓";color:var(--gold);font-weight:700;margin-right:10px}
+.services{background:#eee8df}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{background:var(--paper);border:1px solid var(--line);padding:27px;min-height:190px;transition:.25s}.service:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(31,27,22,.10)}.service-num{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.15em}.service p{color:var(--muted);font-size:14px}
+.projects{background:#211d19;color:#fff}.projects .section-head p{color:#c9c0b4}.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.project-card{position:relative;overflow:hidden;background:#333;min-height:410px;cursor:zoom-in;border:1px solid rgba(255,255,255,.08)}.project-card img{width:100%;height:100%;min-height:410px;object-fit:cover;transition:transform .65s ease,filter .4s}.project-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.88));opacity:.9}.project-card:hover img{transform:scale(1.09);filter:saturate(1.08)}.project-info{position:absolute;z-index:2;left:18px;right:18px;bottom:18px}.project-info small{color:#e4c18e;text-transform:uppercase;letter-spacing:.12em;font-size:10px}.project-info h3{font-family:Inter,sans-serif;font-size:18px;font-weight:600;margin-top:5px}.project-info span{font-size:11px;color:#ddd;opacity:0;transform:translateY(7px);display:block;transition:.25s}.project-card:hover .project-info span{opacity:1;transform:none}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}.why{padding:35px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.why:nth-child(3n){border-right:0}.why p{color:var(--muted);font-size:14px}
+.process{background:#f0ebe4}.process-grid{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line)}.step{padding:25px 18px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step b{color:var(--gold);font-family:"DM Serif Display";font-size:30px}.step h3{font-family:Inter;font-size:14px;font-weight:700;margin:10px 0}.step p{color:var(--muted);font-size:12px}
+.contact{display:grid;grid-template-columns:1.05fr .95fr;gap:70px}form{display:grid;gap:14px}label{font-size:12px;font-weight:600;margin-bottom:5px;display:block}input,select,textarea{width:100%;padding:14px;border:1px solid var(--line);background:#fff;font:inherit;font-size:14px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:130px;resize:vertical}#status{min-height:22px;font-size:13px}.success{color:#2f7047}.error{color:#a33b30}.contact-info{display:grid;gap:18px;align-content:start}.info{padding:20px;background:#fff;border:1px solid var(--line)}.info small{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:10px;margin-bottom:4px}.info a:hover{color:var(--gold)}.map{width:100%;height:330px;border:0;display:block;margin-top:8px}
+footer{background:#181512;color:#c9c0b4;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}footer h3{color:#fff;font-family:Inter;font-size:14px;font-weight:700;margin-bottom:12px}footer a{display:block;padding:4px 0}footer a:hover{color:#fff}.copyright{border-top:1px solid #39342e;margin-top:35px;padding-top:20px;font-size:11px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.float-wa{position:fixed;right:20px;bottom:20px;z-index:80;background:#1f9d55;color:#fff;padding:13px 17px;border-radius:30px;box-shadow:0 10px 30px #0003;font-weight:700;font-size:13px}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:25px}.lightbox.open{display:flex}.lightbox img{max-width:94vw;max-height:90vh;object-fit:contain}.close{position:absolute;right:25px;top:15px;color:#fff;background:none;border:0;font-size:38px;cursor:pointer}.caption{position:absolute;bottom:13px;color:#fff;font-size:13px}
+@media(max-width:1000px){.links{display:none}.burger{display:block}.nav-actions .btn{display:none}.hero{grid-template-columns:1fr}.hero-photo{height:65vh}.service-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(3,1fr)}.step:nth-child(3n){border-right:0}.about,.contact{grid-template-columns:1fr}.about-photo{height:500px}}
+@media(max-width:600px){.wrap{width:min(100% - 28px,1240px)}.nav{height:68px}.brand img{width:48px;height:48px}section{padding:70px 0}.hero{padding:45px 0}.hero-photo{min-height:430px;height:62vh}.service-grid,.project-grid,.why-grid,.process-grid{grid-template-columns:1fr}.project-card,.project-card img{min-height:470px}.why,.step{border-right:0!important}.section-head{display:block}.section-head p{margin-top:12px}.footer-grid{grid-template-columns:1fr}.float-wa{right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><img src="assets/project-01-1.png" alt="Sai Interior Design logo"><div>Sai <span>Interior Design</span></div></a>
+<nav class="links" id="siteLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions"><a class="btn dark" href="#contact">Free Consultation</a><button class="burger" id="menuBtn" aria-label="Open menu" aria-expanded="false" type="button">☰</button></div>
+</div></header>
+
+<main>
+<section id="home"><div class="wrap hero">
+<div><div class="eyebrow">Sai Interior Design</div><h1>Beautiful interiors. Smart designs. Quality workmanship.</h1><p>We create practical, elegant interiors for homes — from modular kitchens and wardrobes to statement TV units and complete home solutions.</p><div class="hero-buttons"><a class="btn dark" href="#projects">View Our Work</a><a class="btn light" href="#contact">Get Free Consultation</a></div></div>
+<div class="hero-photo"><img src="assets/project-06-3.png" alt="Sai Interior Design completed interior"><div class="hero-label">RECENT PROJECT · LUXURY TV UNIT</div></div>
+</div></section>
+
+<section id="about"><div class="wrap about"><div class="about-photo"><img src="assets/project-08-2.png" alt="Sai Interior Design interior project" loading="lazy"></div><div><div class="eyebrow">About Us</div><h2>Interiors designed around the way you live.</h2><p style="color:var(--muted)">Sai Interior Design focuses on thoughtful layouts, useful storage, premium-looking finishes and clean execution. Every project is planned around your room, your needs and your budget.</p><ul class="ticks"><li>End-to-end design and execution</li><li>Space-focused planning and storage</li><li>Material and finish guidance</li><li>Transparent consultation process</li></ul></div></div></section>
+
+<section id="services" class="services"><div class="wrap"><div class="section-head"><div><div class="eyebrow">What We Do</div><h2>Interior Services</h2></div><p>From one feature wall to a complete home, choose the service that fits your space.</p></div><div class="service-grid">
+<div class="service"><span class="service-num">01</span><h3>Modular Kitchen</h3><p>Functional storage, clean finishes and layouts built for everyday cooking.</p></div>
+<div class="service"><span class="service-num">02</span><h3>Wardrobe</h3><p>Custom wardrobe and loft solutions that maximise available space.</p></div>
+<div class="service"><span class="service-num">03</span><h3>TV Unit</h3><p>Modern feature walls with storage, panels, louvers and display spaces.</p></div>
+<div class="service"><span class="service-num">04</span><h3>Bedroom Interior</h3><p>Comfortable, organised bedroom solutions designed for daily use.</p></div>
+<div class="service"><span class="service-num">05</span><h3>Dressing Table</h3><p>Compact dressing areas designed to coordinate with your wardrobe.</p></div>
+<div class="service"><span class="service-num">06</span><h3>Study Table</h3><p>Practical study and work areas that fit your room layout.</p></div>
+<div class="service"><span class="service-num">07</span><h3>False Ceiling</h3><p>Ceiling designs that add structure and support layered lighting.</p></div>
+<div class="service"><span class="service-num">08</span><h3>Complete Home</h3><p>Coordinated interior design and execution for the whole home.</p></div>
+</div></div></section>
+
+<section id="projects" class="projects"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Our Work</div><h2>Recent Projects</h2></div><p>16 unique project visuals from the supplied Sai Interior Design portfolio. Hover for the full-image effect and click any card to view it large.</p></div><div class="project-grid" id="projectGrid"></div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">Why Sai Interior Design</div><h2>Made for real homes.</h2></div></div><div class="why-grid">
+<div class="why"><h3>Customised Design</h3><p>Layouts are planned around your room, storage needs and daily routine.</p></div>
+<div class="why"><h3>Smart Space Use</h3><p>We make practical use of walls, corners, lofts and storage zones.</p></div>
+<div class="why"><h3>Modern Finishes</h3><p>Contemporary panels, wood tones, fluted details and clean lines.</p></div>
+<div class="why"><h3>Function First</h3><p>Good-looking interiors are balanced with everyday usability.</p></div>
+<div class="why"><h3>Quality Focus</h3><p>Attention to materials, finishing and installation details.</p></div>
+<div class="why"><h3>One Team</h3><p>Design discussion, material choices and execution are coordinated.</p></div>
+</div></div></section>
+
+<section id="process" class="process"><div class="wrap"><div class="section-head"><div><div class="eyebrow">How We Work</div><h2>Simple, clear process.</h2></div></div><div class="process-grid">
+<div class="step"><b>01</b><h3>Consultation</h3><p>Understand your space, needs and budget.</p></div><div class="step"><b>02</b><h3>Space Planning</h3><p>Plan the functional layout and storage.</p></div><div class="step"><b>03</b><h3>Design</h3><p>Develop the visual direction and details.</p></div><div class="step"><b>04</b><h3>Materials</h3><p>Select finishes that suit your requirements.</p></div><div class="step"><b>05</b><h3>Execution</h3><p>Coordinate installation and finishing work.</p></div><div class="step"><b>06</b><h3>Handover</h3><p>Final walkthrough and finishing touches.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact"><div><div class="eyebrow">Get In Touch</div><h2>Start your interior project.</h2><p style="color:var(--muted);margin-bottom:28px"></p>
+<form id="enquiryForm">
+<div><label for="name">NAME *</label><input id="name" name="name" required></div>
+<div><label for="phone">PHONE / WHATSAPP *</label><input id="phone" name="phone" inputmode="tel" required></div>
+<div><label for="email">EMAIL</label><input id="email" name="email" type="email"></div>
+<div><label for="projectType">PROJECT TYPE *</label><select id="projectType" name="projectType" required><option value="">Select</option><option>Modular Kitchen</option><option>Wardrobe</option><option>TV Unit</option><option>Bedroom Interior</option><option>Dressing Table</option><option>Study Table</option><option>False Ceiling</option><option>Complete Home Interior</option><option>Other</option></select></div>
+<div><label for="message">REQUIREMENT *</label><textarea id="message" name="message" required placeholder="Tell us about your room, approximate size and requirement..."></textarea></div>
+<button class="btn dark" id="submitBtn" type="submit">Send Enquiry</button><div id="status"></div>
+</form></div>
+<div class="contact-info">
+<div class="info"><small>WhatsApp</small><a href="https://wa.me/918438998263" target="_blank" rel="noopener">+91 84389 98263</a><br><a href="https://wa.me/919994508864" target="_blank" rel="noopener">+91 99945 08864</a></div>
+<div class="info"><small>Office Address</small><div>1/50, Achari Street,<br>Konai Post & Konai Village,<br>Gingee Taluk, Villupuram District,<br>Tamil Nadu — 604205</div></div>
+<div class="info"><small>Office Location</small><a href="https://www.google.com/maps/search/?api=1&query=1%2F50%2C%20Achari%20Street%2C%20Konai%20Village%2C%20Gingee%20Taluk%2C%20Villupuram%20District%2C%20Tamil%20Nadu%20604205" target="_blank" rel="noopener">📍 Open office pin in Google Maps</a><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=1%2F50%2C%20Achari%20Street%2C%20Konai%20Village%2C%20Gingee%20Taluk%2C%20Villupuram%20District%2C%20Tamil%20Nadu%20604205&output=embed"></iframe></div>
+</div></div></section>
+</main>
+
+<a class="float-wa" href="https://wa.me/918438998263?text=Hello%20Sai%20Interior%20Design%2C%20I%20would%20like%20an%20interior%20consultation." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+
+<footer><div class="wrap"><div class="footer-grid"><div><div class="brand" style="color:#fff"><img src="assets/project-01-1.png" alt="Sai Interior Design logo">Sai <span>Interior Design</span></div><p>Beautiful living solutions for practical, elegant homes.</p></div><div><h3>Quick Links</h3><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><div><h3>Contact</h3><a href="tel:+918438998263">84389 98263</a><a href="tel:+919994508864">99945 08864</a><a href="#contact">Konai, Gingee Taluk — 604205</a></div></div><div class="copyright"><span>© <span id="year"></span> Sai Interior Design. All rights reserved.</span><span>Villupuram • Tiruvannamalai • Pondicherry • Chennai • Salem</span></div></div></footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" onclick="closeBox()">×</button><img id="lightImg" alt=""><div class="caption" id="lightCaption"></div></div>
+<script>
+const SCRIPT_URL='https://script.google.com/macros/s/AKfycbzN9G0xU4HmDxsOu7gHv9lrQoMYCalKrZtL3LRdTvsRA9MI9r5y4o-mzTDQzrDdPTQ-eg/exec';
+const projects=[{"title": "Modern TV Unit", "cat": "TV Unit", "img": "assets/project-02-1.png"}, {"title": "Luxury Fluted TV Unit", "cat": "TV Unit", "img": "assets/project-03-2.jpeg"}, {"title": "Sliding Wardrobe & Dressing Table", "cat": "Wardrobe + Dressing", "img": "assets/project-04-1.png"}, {"title": "Luxury Shield Cabinet", "cat": "Shield Cabinet", "img": "assets/project-05-2.jpeg"}, {"title": "TV Unit Wall Louver Finish", "cat": "TV Unit", "img": "assets/project-06-3.jpeg"}, {"title": "Teak TV Fluted Wall Panel", "cat": "TV Unit", "img": "assets/project-07-1.png"}, {"title": "Modern Modular Kitchen", "cat": "Modular Kitchen", "img": "assets/project-08-1.png"}, {"title": "Grey TV Unit Wall Panel", "cat": "TV Unit", "img": "assets/project-09-2.png"}, {"title": "Fluted TV Wall Panel", "cat": "TV Unit", "img": "assets/project-10-2.jpeg"}, {"title": "Grey Wardrobe With Loft", "cat": "Wardrobe", "img": "assets/project-11-2.jpeg"}, {"title": "Hall TV Unit", "cat": "Bedroom", "img": "assets/project-12-2.jpeg"}, {"title": "Marble Grain Wardrobe With Loft", "cat": "Wardrobe", "img": "assets/project-13-2.png"}, {"title": "Turquoise Blue Cupboard", "cat": "Cupboard", "img": "assets/project-14-2.jpeg"}, {"title": "Teak Modular Kitchen", "cat": "Modular Kitchen", "img": "assets/project-15-1.png"}, {"title": "Kitchen Partition — White Luxury", "cat": "Kitchen Partition", "img": "assets/project-16-1.png"}, {"title": "Teak Finish cupboard", "cat": "cupboard", "img": "assets/project-17-3.jpeg"}];
+const grid=document.getElementById('projectGrid');
+projects.forEach((p,i)=>{
+ const card=document.createElement('article'); card.className='project-card';
+ card.innerHTML=`<img src="${p.img}" alt="${p.title}" loading="lazy"><div class="project-info"><small>${p.cat}</small><h3>${p.title}</h3><span>Click to view full image</span></div>`;
+ card.addEventListener('click',()=>openBox(p.img,p.title));
+ grid.appendChild(card);
+});
+function openBox(src,title){document.getElementById('lightImg').src=src;document.getElementById('lightImg').alt=title;document.getElementById('lightCaption').textContent=title;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+function closeBox(){document.getElementById('lightbox').classList.remove('open');document.getElementById('lightImg').src='';document.body.style.overflow='';}
+document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeBox();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox();});
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const menuBtn=document.getElementById('menuBtn');
+const siteLinks=document.getElementById('siteLinks');
+
+menuBtn.addEventListener('click',()=>{
+  const open=siteLinks.classList.toggle('mobile');
+  menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  menuBtn.setAttribute('aria-label',open?'Close menu':'Open menu');
+});
+
+siteLinks.querySelectorAll('a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    siteLinks.classList.remove('mobile');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.setAttribute('aria-label','Open menu');
+  });
+});
+
+window.addEventListener('resize',()=>{
+  if(window.innerWidth>1000){
+    siteLinks.classList.remove('mobile');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.setAttribute('aria-label','Open menu');
+  }
+});
+
+const form=document.getElementById('enquiryForm'),status=document.getElementById('status'),btn=document.getElementById('submitBtn');
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!form.checkValidity()){form.reportValidity();return;}
+ btn.disabled=true;status.className='';status.textContent='Sending your enquiry...';
+ const data=new FormData(form);
+ const params=new URLSearchParams();
+ params.set('name',data.get('name')||'');params.set('phone',data.get('phone')||'');params.set('email',data.get('email')||'');
+ params.set('projectType',data.get('projectType')||'');params.set('message',data.get('message')||'');
+ params.set('source','Sai Interior Design Website');
+ fetch(SCRIPT_URL+'?'+params.toString(),{method:'GET',mode:'no-cors',cache:'no-store'})
+ .then(()=>{status.className='success';status.textContent='✓ Enquiry sent successfully. Our team will contact you soon.';form.reset();btn.disabled=false;})
+ .catch(()=>{status.className='error';status.textContent='Could not send automatically. Please use WhatsApp or call us.';btn.disabled=false;});
+});
+</script>
+</body></html>
